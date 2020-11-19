@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <%-include('partials/header.ejs') %>
+        <link rel="stylesheet" href="css/nosotros.css">
+    </head>
+    <body>
+
+    <div id="particles-js"></div>
+
+    <%-include('partials/nav.ejs') %>
+    
+    <!---------------------------->
+    <div class="container nosotros   ">
+        <!---image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttom start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                 <!--radio buttom start-->
+                 <!---radio images start-->
+                    <div class="slide first">
+                        <img src="img/10b_grupo.jpeg" alt="GRADO 10B">
+                    </div>
+                    <div class="slide">
+                        <img src="img/10b_10a_grupos.jpeg" alt="TODOS JUNTOS">
+                    </div>
+                 <!---radio images end--------->
+                 <!---utomatic navegation-->
+                 <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                 </div>
+                <!---utomatic navegation-->
+                 <!--manual navigation start--->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                    </div>
+                 <!--manual navigation end---->
+            </div>
+        </div>
+        <!--iimage slider end--->
+    </div>
+    <!----------------------------->
+    <section class="container quienes">
+        <div class="contenido-nosotros">
+            <h1>¿quienes somos?</h1>
+            <p>
+                somos dos grupos de estudiantes del colegio nuestra señora de fatima(nusefa) cuyos integrantes han destacado por su espiritu, cuyo espiritu ha hecho que este grado sea destacado entre todos. aunque los años pasen y pasemos de 10° a 11°, siempre seguira teniendo ese espiritu vanguardista y revelde que siempre lo ha caracterizado.
+            </p>
+            <p>
+                en esta ocasion. un estudiante de 10°B llamado jefferson chaustre presenta esta pagina web en colaboracion con sus compañeros y docentes acargo de este proyecto final, que a su vez sera resibido como despedida de año
+            </p>
+            <h1>autores y colaboradores del proyecto</h1>
+            <p>jefferson chaustre y docentes</p>
+            <ul style="margin: 20px;">
+                <li>ANYUL FIGUEROA </li>
+                <li>ISABEL VILLAMIZAR </li>
+                <li>EYBAR VILLAMIZAR</li>
+                <li>ISBELIA GAMBOA</li>
+                <li>NELSON SERRANO</li>
+                <li>HENRY GIL</li> 
+            </ul>
+        </div>
+    </section>
+    <%-include('partials/footer.ejs') %>
+    </body>
+</html>

@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+body{
+    background: #000000;
+    font-size: 1.2rem;
+    font-family: 'Grandstander', cursive;
+}
+
+.container{
+    position: relative;
+    z-index: 99;
+    width: 80%;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 10px;
+}
+/*------- nav ------*/
+.nav{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul li{
+    margin-left: 30px;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav ul li a i{
+    margin-left:10px;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#escudo-policia{
+    width: 100px;
+}
+/*-----------------------*/
+
+.main{
+    text-align: center;
+}
+.main hr{
+    margin: 10px;
+}
+#frutas{
+    border:solid 1px #ffffff;
+    border-radius: 50px;
+}
+/*--------------------*/
+.etapas{
+    height: 85vh;
+}
+.etapas h3{
+    margin-bottom: 20px;
+}
+.etapas h2{
+    text-decoration: underline;
+    margin-bottom: 30px;
+    
+}
+.griv-etapas{
+    width: 100%;
+    height: 270px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+.preguntas{
+    padding:10px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background: rgba(43, 117, 43, 0.767);
+}
+.preguntas h3{
+    margin-bottom: 10px;
+}
+/*------oligoelementos-------*/
+.oligoelementos h1{
+    margin-bottom: 20px;
+
+}
+.oligoelementos p{
+    margin: 10px;
+    padding: 10px;
+}
+.vocabulario-academico{
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px
+}
+.vocabulario-academico li{
+    margin-bottom: 10px;
+}
+.importancia-oligoelementos p{
+    margin: 10px;
+}
+#vegetales{
+    float:right;
+    width:300px;
+    margin:10px;
+}
+.frecuentes table{
+    width: 95%;
+    display:block;
+    overflow-y:scroll;
+    height: 500px;
+}
+.frecuentes table th{
+    background: rgba(40, 187, 40, 0.747);
+    padding:10px;
+}
+.frecuentes table td{
+    padding:10px;
+    background: #ffffff7a;
+}
+.frecuentes table tr th{
+    text-align: center;
+}
+/*------menu-------------*/
+.saludable h1{
+    margin: 10px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+}
+.menu div{
+    border: 1px solid #ffffff;
+    background: #ffffffcc;
+    color: #000000;
+    border-radius:20px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.menu div ul li{
+    list-style: none;
+}
+.menu div ul li h3,
+.menu div ul li p{
+    margin-bottom:10px;
+}
+
+/*---------table--------------*/
+
+.tabla-oligoelementos h2{
+    margin-bottom: 30px;
+    text-decoration:underline;
+}
+
+.tabla-oligoelementos table{
+    width:90%;
+}
+.tabla-oligoelementos table th{
+    background: rgba(40, 187, 40, 0.747);
+    padding: 10px;
+}
+.tabla-oligoelementos table td{
+    padding: 10px;
+    background: #ffffff7a;
+}
+
+
+
+
+
+/*----------footer-------*/
+footer{
+    text-align: center;
+    background: #858484;
+    width: 100%;
+    height:290px;
+}
+.footer{
+    padding: 20px;
+    margin-top:10px;
+}
+.footer h1, p, h2{
+    margin-bottom: 5px;
+}
+.enlaces{
+    font-size:3em;
+    margin: 10px;;
+}
+.enlaces a i{
+    color:#ffffff
+}
+
+
+
+@media only screen and (max-width:790px){
+    .container{
+        width: 90%;
+    }  
+    .etapas{
+        height: 135vh;
+    }
+    .griv-etapas{
+        width: 100%;
+        display: grid;
+        padding: 0;
+        grid-template-columns: repeat(2, 4fr);
+        grid-gap: 5px;
+    }
+    .menu{
+        grid-template-columns: repeat(2, 4fr);
+    }
+    .significo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 20px;
+    }
+    .oligoelementos-content{
+        color: #000000;
+        margin: 10px 10px 5px 50px;
+        padding: 40px 0px 0px 0px ;   
+    }
+    #bioelementos{
+        display: none;
+    }
+    .nav{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tabla-oligoelementos table{
+        display: block;
+        width:95%;
+        height: 500px;
+        overflow-y: scroll;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    display: none;
+}
+::-webkit-scrollbar-thumb{
+    background: #3BEC1C;
+    border-radius: 10px;
+}
